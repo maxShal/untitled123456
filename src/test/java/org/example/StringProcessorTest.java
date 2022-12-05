@@ -50,6 +50,11 @@ public class StringProcessorTest
     {
         assertEquals("один",StringChange("1"));
     }
+    @Test
+    public void StringChangeTest2()
+    {
+        assertEquals("одинодиндватри4",StringChange("11234"));
+    }
     @Test(expected = IllegalArgumentException.class)
     public void StringCopytest1()
     {
@@ -59,6 +64,10 @@ public class StringProcessorTest
     public void StringDeleteTest()
     {
         assertEquals("13",StringDelete(new StringBuilder("1234")));
+        assertEquals("",StringDelete(new StringBuilder("")));
+        assertEquals("1",StringDelete(new StringBuilder("1")));
+        assertEquals("1",StringDelete(new StringBuilder("12")));
+        assertEquals("13",StringDelete(new StringBuilder("123")));
     }
     @Test(expected = IllegalArgumentException.class)
     public void StringDeletetest1()
