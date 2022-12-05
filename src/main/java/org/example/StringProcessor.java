@@ -1,7 +1,7 @@
 package org.example;
 
 public class StringProcessor
-{//тест
+{//тест12345678
     public static String StringCopy(String s, int N)
     {
         String str1 = "";
